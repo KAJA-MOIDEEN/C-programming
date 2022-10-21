@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+
+    double a,b;
+    printf("Enter a:");
+    scanf("%lf",&a);
+    printf("Enter b:");
+    scanf("%lf",&b);
+
+    // swapping
+    // a = (initial_a - initial_b)
+    a=a-b;
+    // b = (initial_a - initial_b) + initial_b = initial_a
+    b=a+b;
+    // a = initial_a - (initial_a - initial_b = initial_b
+    a=b-a;
+    //%.2lf 2 decimal
+    printf("After swaping a = %.2lf\n", a);
+    printf("After swaping b = %.2lf\n", b);
+    return 0;
+
+
+
+}
